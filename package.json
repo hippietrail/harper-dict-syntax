@@ -1,0 +1,25 @@
+{
+  "name": "harper-dict",
+  "displayName": "Harper curated dictionary",
+  "description": "Syntax highlighter for the Harper grammar checker's curated dictionary file",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "hdict",
+      "aliases": ["Harper .dict", "hdict"],
+      "extensions": [".dict"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "hdict",
+      "scopeName": "dict.harper",
+      "path": "./syntaxes/hdict.tmLanguage.json"
+    }]
+  }
+}

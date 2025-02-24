@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Harper .dict",
+	"scopeName": "dict.harper",
+	"patterns": [
+		{
+			"match": "^([A-Za-z'][A-Za-z0-9']*)(?:(/)([A-Za-z0-9]*))?(\\s+(.*))?$",
+			"captures": {
+				"1": {
+					"name": "variable"
+				},
+				"2": {
+					"name": "constant"
+				},
+				"3": {
+					"name": "string"
+				},
+				"4": {
+					"name": "comment"
+				}
+			}
+		},
+		{
+			"match": "^[0-9]+$",
+			"captures": {
+				"0": {
+					"name": "number"
+				}
+			}
+		}
+	],
+	"repository": {}
+}
