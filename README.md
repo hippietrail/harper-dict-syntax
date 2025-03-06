@@ -15,3 +15,7 @@ To learn about the annotation flags please consult [the official documentation](
 ## Known Issues
 
 The author knows nothing about VS Code syntax highlighter extensions and nothing about TextMate. So please feel free to contribute improvements that turn this into a proper VS Code syntax highlighter.
+
+## See also
+
+[Tree-sitter version](https://github.com/hippietrail/tree-sitter-harper-dict)
