@@ -4,7 +4,15 @@
 	"scopeName": "dict.harper",
 	"patterns": [
 		{
-			"match": "^([0-9A-Za-z'áçéíïóü']*[A-Za-z'áçéíïóü'][0-9A-Za-z'áçéíïóü']*)(?:(/)([A-Za-z0-9'.!+~-]*))?(\\s+(.*))?$",
+			"match": "^[0-9]+$",
+			"captures": {
+				"0": {
+					"name": "number"
+				}
+			}
+		},
+		{
+			"match":   "^([\\p{Latin}0-9']+)(?:(/)([A-Za-z0-9'.!+~-]*))?(\\s+(.*))?$",
 			"captures": {
 				"1": {
 					"name": "variable"
@@ -17,14 +25,6 @@
 				},
 				"4": {
 					"name": "comment"
-				}
-			}
-		},
-		{
-			"match": "^[0-9]+$",
-			"captures": {
-				"0": {
-					"name": "number"
 				}
 			}
 		}
