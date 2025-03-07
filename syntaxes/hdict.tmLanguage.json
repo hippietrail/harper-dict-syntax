@@ -12,7 +12,11 @@
 			}
 		},
 		{
-			"match":   "^([\\p{Latin}0-9']+)(?:(/)([A-Za-z0-9'.!+~-]*))?(\\s+(.*))?$",
+			"match": "^#.*$",
+			"name": "comment"
+		},
+		{
+			"match":   "^([\\p{Latin}0-9'.+ ]+)(?:(/)([A-Za-z0-9'.!+~-]*))?(\\s+(#.*))?$",
 			"captures": {
 				"1": {
 					"name": "variable"
@@ -27,6 +31,10 @@
 					"name": "comment"
 				}
 			}
+		},
+		{
+			"match": "(.+?)",
+			"name": "invalid.illegal"
 		}
 	],
 	"repository": {}
