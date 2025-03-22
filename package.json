@@ -2,7 +2,7 @@
   "name": "harper-dict",
   "displayName": "Harper curated dictionary",
   "description": "Syntax highlighter for the Harper grammar checker's curated dictionary file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.94.0"
   },
